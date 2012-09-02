@@ -1,7 +1,6 @@
 TimeTracker::Application.routes.draw do
   resources :posts
   root :to => "home#index"
-
   get "home/index"
 
   # The priority is based upon order of creation:
