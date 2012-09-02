@@ -14,7 +14,11 @@
 //= require jquery_ujs
 //= require foundation
 //= require_tree .
+//= require highcharts
 
-   $(window).load(function() {
-       $('#featured').orbit();
-   });
+
+//	Setup Orbit
+$(window).load(function() {
+   $('#featured').orbit();
+});
+
