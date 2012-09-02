@@ -12,6 +12,22 @@
  *= require foundation_and_overrides
  *= require_tree .
 */
+
+
+html {
+}
+
+.hipster_frame {
+  background-color: #FFFFFF;
+  padding: 10px;
+  box-shadow: 2px 2px 5px #666666;
+}
+
+.row {
+ background-color:#EEEEEE;
+ padding: 10px;
+}
+
 .brand {
   float: left;
   padding-right: 8px;
