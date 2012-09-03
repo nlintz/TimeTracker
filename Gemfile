@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 gem 'rails', '3.2.8'
+gem 'thin'
+gem 'devise'
 gem 'sqlite3'
-gem "highcharts-rails", "~> 2.3.0"
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
