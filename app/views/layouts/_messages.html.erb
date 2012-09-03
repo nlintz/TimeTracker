@@ -1,3 +1,10 @@
-<% flash.each do |name, msg| %>
-  <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
-<% end %>
+<div class="row">
+  <div class="twelve columns centered">
+    <% flash.each do |name, msg| %>
+      <div class="alert-box secondary">
+        <%= msg %>
+        <a href="" class="close">&times;</a>
+      </div>
+    <% end %>
+  </div>
+</div>

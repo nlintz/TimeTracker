@@ -1,5 +1,6 @@
 TimeTracker::Application.routes.draw do
   devise_for :users
-  root :to => "home#index"
-  match '/:timepage' => 'home#timepage'
+  resources :dashboard
+  root to: "home#index"
+  match '/:DashboardController' => 'dashboard#index'
 end

@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
-  end
-  def timepage
+    if user_signed_in?
+      redirect_to :controller=>'dashboard', :action => 'index'
+    end
   end
 end

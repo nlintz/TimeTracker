@@ -4,7 +4,7 @@
   <li><a href="https://github.com/xoorath/TimeTracker">Github</a></li>
 
   <li class="has-flyout">
-    <a href="#">This Guy</a>
+    <a href="#">Xoorath</a>
     <a href="#" class="flyout-toggle"><span> </span></a>
     <ul class="flyout">
       <li><a href="http://jaredthomson.com">Personal Website</a></li>
@@ -12,4 +12,24 @@
       <li><a href="http://blog.xoorath.com">Blog</a></li>
     </ul>
   </li>
+
+
+    <% if user_signed_in? %>
+      <li class="has-flyout">
+      <a href="#"><%= current_user.email %></a>
+      <a href="#" class="flyout-toggle"><span> </span></a>
+      <ul class="flyout">
+        <li><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></li>
+      </ul>
+    </li>
+  <% else %>
+    <li class="has-flyout">
+      <a href="#">Time Tracker</a>
+      <a href="#" class="flyout-toggle"><span> </span></a>
+      <ul class="flyout">
+        <li><%= link_to "Log In", new_user_session_path %></li>
+        <li><%= link_to "Sign Up", new_user_registration_path %></li>
+      </ul>
+    </li>
+  <% end %>
 </ul>
