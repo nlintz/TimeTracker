@@ -19,6 +19,7 @@
       <a href="#"><%= current_user.email %></a>
       <a href="#" class="flyout-toggle"><span> </span></a>
       <ul class="flyout">
+        <li><%= link_to "Account", edit_user_registration_path %></li>
         <li><%= link_to "Log Out", destroy_user_session_path, :method => :delete %></li>
       </ul>
     </li>
